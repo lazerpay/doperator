@@ -1,0 +1,168 @@
+.global-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    width: 100vw;
+    padding: 12px 0;
+}
+
+.logo {
+    width: 22px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.app-name {
+    font-family: var(--montserrat);
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.intro-line {
+    margin-top: 30px;
+    width: 95%;
+    text-align: center;
+    font-family: var(--opensans);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#first {
+    font-size: 19px;
+    color: var(--red);
+    font-weight: 700;
+}
+
+.dropzone {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    cursor: pointer;
+    height: 130px;
+    width: 90%;
+    border: 2px dashed var(--green);
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.dropzoneReject {
+    background: var(--red);
+}
+
+.dropzoneAccept {
+    background: var(--green);
+}
+
+.input-box-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box-content {
+    font-family: var(--roboto);
+}
+
+.animated {
+    margin-bottom: 20px;
+}
+
+.fa-file-upload {
+    font-size: 23px;
+    animation: moveUp 1.2s ease-in-out infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+.default {
+    background: transparent;
+}
+
+.null {
+    background: rgb(226, 66, 66);
+}
+
+.ag-theme-alpine {
+    width: 95%;
+    height: 500px;
+    margin-bottom: 50px;
+    border: 1.5px solid var(--blue);
+}
+
+.no-file-uploaded {
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--roboto);
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 95%;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 20px;
+    font-family: var(--opensans);
+    border: 1px solid var(--green);
+    padding: 7px 10px;
+}
+
+.input:focus{
+    border: 2px solid var(--green);
+}
+
+.powered {
+    margin-bottom: 10px;
+    font-family: var(--opensans);
+}
+
+.powered span {
+    font-weight: 600;
+    color: var(--red);
+}
+
+
+@media screen and (min-width: 997px) {
+    .logo-wrapper{
+        padding: 16px 0;
+    }
+
+    .dropzone{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+
+    .ag-theme-alpine{
+        width: 95%;
+        height: 800px;
+    }
+
+    .input{
+        width: 60%;
+    }
+
+    .input{
+        margin-bottom: 30px;
+    }
+}
